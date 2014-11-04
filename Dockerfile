@@ -22,9 +22,6 @@ RUN /bin/mv composer.phar /usr/local/bin/composer
 # Install laravel package
 RUN mkdir /var/www/laravel
 WORKDIR /var/www/laravel
-RUN curl -L https://github.com/laravel/laravel/archive/master.zip -o temp.zip; \
-	unzip temp.zip; rm temp.zip; mv ./laravel-master/* ./
-RUN /bin/chown www-data:www-data -R /var/www/laravel/app/storage
 
 EXPOSE 80
 
