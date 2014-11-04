@@ -4,7 +4,7 @@ MAINTAINER Avin Grape "carcinogen75@gmail.com"
 
 # Install packages
 RUN apt-get update
-RUN apt-get install -y git curl wget apache2 php5 php5-mcrypt php5-json unzip
+RUN apt-get install -y git curl wget apache2 php5 php5-mcrypt php5-json php5-mysql unzip
 RUN apt-get -y autoremove 
 RUN apt-get clean
 
