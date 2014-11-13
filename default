@@ -2,15 +2,9 @@
         ServerAdmin webmaster@localhost
 
         DocumentRoot /var/www/laravel/public
-        <Directory />
-                Options FollowSymLinks
-                AllowOverride All 
-        </Directory>
-        <Directory /var/www/>
-                Options Indexes FollowSymLinks MultiViews
-                AllowOverride None
-                Order allow,deny
-                allow from all
+        <Directory /var/www/laravel/public>
+            Options Indexes MultiViews FollowSymLinks
+            AllowOverride All
         </Directory>
 
         ErrorLog ${APACHE_LOG_DIR}/error.log
